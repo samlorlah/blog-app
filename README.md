@@ -1,59 +1,127 @@
-## Blog App
-> A blog application made with Ruby on Rails.
-This is an educational project for learning Ruby on Rails.
+<a name="readme-top"></a>
+# 📗 Table of Contents
 
-## Built with
-- Ruby
-- Rails
-- PostgresQL
+- [📗 Table of Contents](#-table-of-contents)
+- [📖 Blog App with Ruby on Rails ](#-blog-app-with-ruby-on-rails-)
+  - [🛠 Built With ](#-built-with-)
+    - [Tech Stack ](#tech-stack-)
+  - [💻 Getting Started ](#-getting-started-)
+    - [Prerequisites](#prerequisites)
+    - [Setup](#setup)
+    - [Install](#install)
+    - [Usage](#usage)
+    - [Run tests](#run-tests)
+  - [👥 Authors ](#-authors-)
+  - [🤝 Contributing ](#-contributing-)
+  - [⭐️ Show your support ](#️-show-your-support-)
+  - [🙏 Acknowledgments ](#-acknowledgments-)
+  - [📝 License ](#-license-)
 
-## Getting Started
+# 📖 Blog App with Ruby on Rails <a name="about-project"></a>
+
+> A blog application made with Ruby on Rails. This is an educational project for learning Ruby on Rails.
+
+## 🛠 Built With <a name="built-with"></a>
+
+### Tech Stack <a name="tech-stack"></a>
+
+> This project was developed with Ruby ob Rails
+
+<details>
+  <summary>Server</summary>
+  <ul>
+    <li><a href="https://www.ruby-lang.org/en/">Ruby</a></li>
+  </ul>
+</details>
+
+<details>
+<summary>Database</summary>
+  <ul>
+    <li><a href="https://www.postgresql.org/">PostgreSQL</a></li>
+  </ul>
+</details>
+
+## 💻 Getting Started <a name="getting-started"></a>
+
+To get a local copy up and running, follow these steps.
 
 ### Prerequisites
-You need Ruby v3+, Rails v7+ and Postgresql installed on your machine.
 
+In order to run this project you need Ruby v3+, Rails v7+ and Postgresql installed on your machine.
+
+```sh
+ gem install rails
+```
 ### Setup
 
-- Clone this repo locally using git in the command line with the following command
-```ruby
-> https://github.com/samlorlah/blog-app.git
-```
-- Alternatively, you can just download the complete zip file and extract the folder in your directory
+Clone this repository to your desired folder:
 
+```sh
+  cd my-folder
+  git clone git@github.com:samlorlah/blog-app.git
+```
+### Install
+
+Install this project with:
+
+
+```sh
+  cd blog-app
+  gem install
+```
 ### Usage
 
-In the project directory,open terminal and run this command:
+To run the project, execute the following command:
 
-```ruby
-> rails server
+
+```sh
+  rails server
 ```
 
-### Testing
-This command will run all the tests in your terminal:
+### Run tests
 
-  ```ruby
-  > rspec spec
-  ```
-  
-## Authors
+To run tests, run the following command:
 
-👤 **Charlotte Divine**
+```sh
+  rspec spec
+```
 
-- GitHub: [samlorlah](https://github.com/samlorlah)
-- LinkedIn: [Oluwamuyiwa Fawole](https://www.linkedin.com/in/muyiwa-fawole/)
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-## 🤝 Contributing
+## 👥 Authors <a name="authors"></a>
+
+👤 **Muyiwa Fawole**
+
+- GitHub: [@samlorlah](https://github.com/samlorlah)
+- Twitter: [@samlorlah](https://twitter.com/samlorlah)
+- LinkedIn: [LinkedIn](https://linkedin.com/in/muyiwa-fawole)
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+
+## 🤝 Contributing <a name="contributing"></a>
 
 Contributions, issues, and feature requests are welcome!
 
 Feel free to check the [issues page](../../issues/).
 
-## Show your support
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-Give a ⭐️ if you like this project!
 
-## Acknowledgments
+## ⭐️ Show your support <a name="support"></a>
 
-- Hat tip to anyone whose code was used
-- Inspiration
-- etc
+> Give a ⭐️ if you like this project!
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+## 🙏 Acknowledgments <a name="acknowledgements"></a>
+
+> Hat tip to anyone whose code was used
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+## 📝 License <a name="license"></a>
+
+This project is [MIT](./MIT.md) licensed.
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
