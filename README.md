@@ -2,7 +2,7 @@
 # 📗 Table of Contents
 
 - [📗 Table of Contents](#-table-of-contents)
-- [📖 \[your\_project\_name\] ](#-your_project_name-)
+- [📖 Blog App with Ruby on Rails ](#-blog-app-with-ruby-on-rails-)
   - [🛠 Built With ](#-built-with-)
     - [Tech Stack ](#tech-stack-)
   - [💻 Getting Started ](#-getting-started-)
@@ -17,7 +17,7 @@
   - [🙏 Acknowledgments ](#-acknowledgments-)
   - [📝 License ](#-license-)
 
-# 📖 [your_project_name] <a name="about-project"></a>
+# 📖 Blog App with Ruby on Rails <a name="about-project"></a>
 
 > A blog application made with Ruby on Rails. This is an educational project for learning Ruby on Rails.
 
