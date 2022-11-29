@@ -12,6 +12,7 @@
     - [Usage](#usage)
     - [Run tests](#run-tests)
   - [👥 Authors ](#-authors-)
+  - [🔭 Future Features ](#-future-features-)
   - [🤝 Contributing ](#-contributing-)
   - [⭐️ Show your support ](#️-show-your-support-)
   - [🙏 Acknowledgments ](#-acknowledgments-)
@@ -98,7 +99,12 @@ To run tests, run the following command:
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
+## 🔭 Future Features <a name="future-features"></a>
 
+- [ ] Views to Add Users, Posts and Comments
+- [ ] API routing
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 ## 🤝 Contributing <a name="contributing"></a>
 
 Contributions, issues, and feature requests are welcome!
