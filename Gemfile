@@ -17,6 +17,8 @@ gem 'puma', '~> 5.0'
 
 group :development, :test do
   gem 'rspec-rails'
+  gem "database_cleaner"
+  gem "rspec-rails"
 end
 
 gem 'rails-controller-testing'
