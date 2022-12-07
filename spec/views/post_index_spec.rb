@@ -49,6 +49,23 @@ RSpec.describe 'Post Index', type: :feature do
       expect(page).to have_content('Number of posts: 2')
     end
 
+    it 'can display the post title' do
+      visit user_posts_path(@user)
+      expect(page).to have_content('My test post')
+      expect(page).to have_content('My second test post')
+    end
+
+    it 'can see the first post title as' do
+      visit user_posts_path(@user)
+      expect(page).to have_content(@user.posts.first.title)
+    end
+
+    it 'it redirects me to a posts show page when the post is clicked' do
+      visit user_posts_path(@user)
+      click_link 'My test post'
+      expect(page).to have_current_path(user_post_path(@user, @post1))
+    end
+
     it 'can see some of the post body' do
       visit user_posts_path(@user)
       expect(page).to have_content('My test post')

@@ -12,8 +12,8 @@
   </div>
   <ul class="comments-list-container">
     <% if @post.comments_counter > 0%>
-      <%@post.five_recent_comments.each do |comment|%>
-      <li><%= comment.text %></li>
+      <%@post.comments.each do |comment|%>
+      <li><%= comment.author.name %> : <%= comment.text %></li>
       <%end%>
     <%else%>
       <li>No comment<li>

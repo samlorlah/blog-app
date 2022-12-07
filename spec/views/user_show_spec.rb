@@ -21,6 +21,12 @@ RSpec.describe 'User Show', type: :feature do
       comments_counter: 0,
       likes_counter: 0
     )
+    @post3 = Post.create(author: @user, title: 'My third test post', text: 'This is my third post',
+                         comments_counter: 0,
+                         likes_counter: 0)
+    @post4 = Post.create(author: @user, title: 'My fourth test post', text: 'This is my fourth post',
+                         comments_counter: 0,
+                         likes_counter: 0)
   end
   describe 'a user show page' do
     it 'displays the users profile photo' do
@@ -38,12 +44,14 @@ RSpec.describe 'User Show', type: :feature do
   end
   it 'shows the right Number of posts' do
     visit user_path(@user)
-    expect(page).to have_content('Number of posts: 2')
+    expect(page).to have_content('Number of posts: 4')
   end
-  it 'shows all the available users posts' do
+  it 'shows all the 3 recent posts' do
     visit user_path(@user)
     expect(page).to have_content('My test post')
     expect(page).to have_content('My second test post')
+    expect(page).to have_content('My third test post')
+    expect(page).to_not have_content('My fourth test post')
   end
   it 'shows a button that helps view all of a users posts' do
     visit user_path(@user)
