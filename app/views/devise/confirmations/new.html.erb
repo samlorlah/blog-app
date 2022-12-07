@@ -1,0 +1,21 @@
+<% @title='My Blog | Resend confirmation' %>
+<%= render "devise/shared/error_messages", resource: resource %>
+<div class = "d-flex flex-column align-items-center mt-5">
+  <div class="card mb-3" style="width: 540px;">
+    <h2 class="card-header text-info">Resend confirmation instructions</h2>
+    <div class="card-body">
+      <%= form_for(resource, as: resource_name, url: confirmation_path(resource_name), html: { method: :post }) do |f| %>
+        <div class="form-group mb-3">
+          <%= f.label :email, class:"form-label" %>
+          <%= f.email_field :email, autofocus: true, autocomplete: "email", value: (resource.pending_reconfirmation? ? resource.unconfirmed_email : resource.email), class:"form-control" %>
+        </div>
+        <div class="actions">
+          <%= f.submit "Resend confirmation instructions", class:"btn btn-primary" %>
+        </div>
+      <% end %>
+    </div>
+    <div class="card-footer">
+      <%= render "devise/shared/links" %>
+    </div>
+  </div>
+</div>

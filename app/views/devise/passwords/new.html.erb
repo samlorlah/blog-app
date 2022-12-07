@@ -1,0 +1,21 @@
+<% @title='My Blog | Forget Password' %>
+<%= render "devise/shared/error_messages", resource: resource %>
+<div class = "d-flex flex-column align-items-center">
+  <div class="card mb-3" style="width: 540px;">
+    <h2 class="card-header text-info">Forgot your password?</h2>
+    <div class="card-body">
+      <%= form_for(resource, as: resource_name, url: password_path(resource_name), html: { method: :post }) do |f| %>
+        <div class="mb-3">
+          <%= f.label :email, class:"form-label" %><br />
+          <%= f.email_field :email, autofocus: true, autocomplete: "email", class:"form-control" %>
+        </div>
+        <div class="mb-3">
+          <%= f.submit "Send me reset password instructions", class:"btn btn-primary", data:{turbo:false} %>
+        </div>
+      <% end %>
+    </div>
+    <div class="card-footer">
+      <%= render "devise/shared/links" %>
+    </div>
+  </div>
+</div>
