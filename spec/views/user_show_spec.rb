@@ -21,20 +21,12 @@ RSpec.describe 'User Show', type: :feature do
       comments_counter: 0,
       likes_counter: 0
     )
-    @post3 = Post.create(
-      author: @user,
-      title: 'My third test post',
-      text: 'This is my third post',
-      comments_counter: 0,
-      likes_counter: 0
-    )
-    @post4 = Post.create(
-      author: @user,
-      title: 'My fourth test post',
-      text: 'This is my fourth post',
-      comments_counter: 0,
-      likes_counter: 0
-    )
+    @post3 = Post.create(author: @user, title: 'My third test post', text: 'This is my third post',
+                         comments_counter: 0,
+                         likes_counter: 0)
+    @post4 = Post.create(author: @user, title: 'My fourth test post', text: 'This is my fourth post',
+                         comments_counter: 0,
+                         likes_counter: 0)
   end
   describe 'a user show page' do
     it 'displays the users profile photo' do
